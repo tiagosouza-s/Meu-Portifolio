@@ -1,8 +1,17 @@
+
 body{
     font-family: Verdana;
     font-size: 22px;
     color: rgb(52, 127, 219);
     background-color: rgb(13, 13, 14);
+}
+
+div{
+    width: 600px;
+    margin: 20px auto;
+    background-color: aliceblue;
+    padding: 40px 60px 60px 60px;
+
 }
 h1{
     text-align: center;
@@ -16,3 +25,9 @@ h3{
 li{
     color: rgb(39, 134, 189);
 }
+img{
+    width: 600px;
+}
+
+
+
