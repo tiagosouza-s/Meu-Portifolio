@@ -4,11 +4,13 @@ body{
     font-size: 22px;
     color: rgb(52, 127, 219);
     background-color: rgb(242, 242, 248);
+    margin: 0
 }
 div{
-    width: 600px;
     text-align: center;
     margin: 0 auto;
+    border-top: 1px solid  rgb(52, 127, 219); 
+    padding: 50px;
 }
 
 h1{
@@ -20,27 +22,25 @@ h2{
     text-align: center;
     margin-top: 35px;
     margin-bottom: 35px;
-    border-bottom: 5px solid;
     padding: 25px;
 }
 h3{
-    border: 5px solid;
+  
     padding: 25px;
 }
 li{
     color: rgb(39, 134, 189);
+    padding: 15px;
 }
 img{
     width: 600px;
 }
-h4{
-    border: 5px solid;
-    padding: 15px;
-    border-radius: 40px;
-}
-li{
-    padding: 15px;
-}
+
+
+
 p{
-    text-align: left;
+    text-align: center;
+    color: rgb(39, 134, 189);
+    margin: 15px auto 30px auto;
+    padding-bottom:50px ;
 }
