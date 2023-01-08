@@ -1,0 +1,109 @@
+
+body{
+   margin:0;
+   font-family: tahoma;
+
+}
+
+/*=== Estilos globais ===*/
+.secao{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.paragrafo{
+    margin:10px auto 40px auto;
+    text-align: justify;
+    font-size: 18px;
+    width: 980px;
+    text-align: justify;
+}
+
+/*=== 1ª Seção ===*/
+.topo{
+    background-color: black;
+} 
+.topo img{
+    width: 200px;
+    border-radius: 100px;
+    
+}
+.paragrafo-topo{
+    margin-top: 150px;
+
+    font-size: 18px;
+}
+.link-topo{
+    color: #ffffff;
+    padding: 20px;
+}
+h1{
+   margin-top: 50px;
+    color:#ffffff
+}
+h2{
+    color:#ffffff;
+}
+
+/*=== Estilos em destaque ===*/
+span{
+    font-weight: bold;
+}
+.texto-azul{
+    color: #1f61f1;
+}
+.texto-branco{
+    color: #ffffff;
+}
+/*=== 2ª Seção ===*/
+
+img{
+    width: 540px;
+}
+
+/*=== 3ª Seção ===*/
+
+    
+.imagem-tecnologia{
+    width: 200px;
+}
+h3{
+    font-size: 28px;
+}
+/*=== 4ª Seção ===*/
+.projetos{
+    background-color: #1c81c0;
+}
+.lista-projeto img{
+   width: 350px; 
+
+
+}
+.link-projetos{
+    background-color: #1c81c0;
+    color:#ffffff;
+    padding: 2px 5px 2px 5px;
+    margin-bottom: px;
+    border-radius: 5px;
+}
+.tipo-projeto{
+    text-decoration: underline;
+    
+}
+/*=== 5ª Seção ===*/
+.redes-sociais{
+    background-color:black;
+}
+
+.lista-redes{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+.link-redes{
+    background-color: #ffffff;
+    color:#1c81c0;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+}
