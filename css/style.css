@@ -75,8 +75,11 @@ h3{
 .projetos{
     background-color: #1c81c0;
 }
+.lista-projeto{
+    list-style: none;
+}
 .lista-projeto img{
-   width: 350px; 
+   width: 350px; ;
 
 
 }
@@ -84,13 +87,10 @@ h3{
     background-color: #1c81c0;
     color:#ffffff;
     padding: 2px 5px 2px 5px;
-    margin-bottom: px;
-    border-radius: 5px;
-}
-.tipo-projeto{
-    text-decoration: underline;
     
 }
+
+    
 /*=== 5ª Seção ===*/
 .redes-sociais{
     background-color:black;
