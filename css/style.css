@@ -1,7 +1,7 @@
 
 body{
    margin:0;
-   font-family: tahoma;
+   font-family: tahoma;  
 
 }
 
@@ -10,15 +10,17 @@ body{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+   
 
 }
 .paragrafo{
     margin:10px auto 40px auto;
     text-align: justify;
     font-size: 18px;
-    width: 980px;
-    text-align: justify;
+    width: 100%;
+    
 }
+
 
 /*=== 1ª Seção ===*/
 .topo{
@@ -57,16 +59,19 @@ span{
     color: #ffffff;
 }
 /*=== 2ª Seção ===*/
-
+.sobre{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 img{
-    width: 540px;
+    width: 50%;
 }
 
 /*=== 3ª Seção ===*/
 
-    
-.imagem-tecnologia{
-    width: 200px;
+.tecnologia{
+     margin-left: 30px;
+    margin-right: 30px;
 }
 h3{
     font-size: 28px;
