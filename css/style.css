@@ -1,114 +1,160 @@
-
-body{
-   margin:0;
-   font-family: tahoma;  
-
+*{
+    margin: 0;
 }
-
+body{
+    height: 100%;
+    font-family: tahoma;
+}
+.limita-largura {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
 /*=== Estilos globais ===*/
 .secao{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-   
-
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 .paragrafo{
-    margin:10px auto 40px auto;
+    font-size: 16px;
     text-align: justify;
-    font-size: 18px;
-    width: 100%;
-    
-}
-
-
-/*=== 1ª Seção ===*/
-.topo{
-    background-color: black;
-} 
-.topo img{
-    width: 200px;
-    border-radius: 100px;
-    
-}
-.paragrafo-topo{
-    margin-top: 150px;
-
-    font-size: 18px;
-}
-.link-topo{
-    color: #ffffff;
-    padding: 20px;
-}
-h1{
-   margin-top: 50px;
-    color:#ffffff
-}
-h2{
-    color:#ffffff;
-}
-
-/*=== Estilos em destaque ===*/
-span{
-    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 20px;
 }
 .texto-azul{
-    color: #1f61f1;
+    color: blue;
 }
 .texto-branco{
     color: #ffffff;
 }
-/*=== 2ª Seção ===*/
-.sobre{
-    margin-left: 30px;
-    margin-right: 30px;
-}
-img{
-    width: 50%;
+/*=== Seção Um ===*/
+.secao-um{
+    width: 100%;
+    background-color: #3a07f5;
+    color:#ffffff;   
 }
 
-/*=== 3ª Seção ===*/
-
-.tecnologia{
-    margin-left: 30px;
-    margin-right: 30px;
-}
-h3{
-    font-size: 28px;
-}
-/*=== 4ª Seção ===*/
-.projetos{
-    background-color: #1c81c0;
-}
-.lista-projeto{
-    list-style: none;
-}
-.lista-projeto img{
-   width: 350px; ;
-
-
-}
-.link-projetos{
-    background-color: #1c81c0;
-    color:#ffffff;
-    padding: 2px 5px 2px 5px;
-    
-}
-
-    
-/*=== 5ª Seção ===*/
-.redes-sociais{
-    background-color:black;
-}
-
-.lista-redes{
-    margin-top: 15px;
-    text-align: center;
-    font-size: 18px;
-}
-.link-redes{
+a{
+    color: blue;
     background-color: #ffffff;
-    color:#1c81c0;
-    padding: 2px 5px 2px 5px;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding: 2px 15px ;
+    text-decoration: none;
+    font-weight: bold;
+    
 }
+.secao-um .links{
+    padding: 20px;
+    text-align: center;
+}
+
+/*=== Seção Topo ===*/
+
+h1{
+    font-size: 48px;
+    position: absolute;
+    top: 250px;
+    
+}
+h2{
+    font-size: 48px;
+    position: absolute;
+    top: 310px;
+    
+}
+.paragrafo-topo{
+    font-size: 23px;
+    position: absolute;
+    top: 370px;
+    color: #3a07f5;
+    font-weight: bold;
+    
+}
+.links li{
+    display: inline;
+    padding: 0  12px;
+    
+}
+.links{
+    padding: 14px 0;
+}
+.topo .links{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.topo{
+    width: 100%;
+    background-color: rgb(12, 48, 212);
+    background-image: url('../img/lampada.jpg');
+    background-size: cover;
+    opacity: 0.3;
+    background-attachment: fixed;
+    background-position: 50%;
+    height: 650px;        
+}
+
+.topo div{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto; 
+    color: aliceblue;
+} 
+
+.container {
+    position: relative;
+     
+}
+
+
+/*===Seção sobre ===*/
+h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+img {
+    width: 100%;
+    overflow: clip;
+}
+
+/*===Seção habilidades ===*/
+.galeria{
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 auto 20px auto;   
+}
+.galeria img{
+    width: 315px;
+    margin: 10px;
+}
+.imagem-sombra{
+    box-shadow: 10px 10px 10px #939393;
+}
+
+
+/*=== Seção projetos ===*/
+
+.projetos img{
+    width: 40%;
+}
+/*=== Seção rodape ===*/
+.rodape{
+    width: 100%;
+    background-color: #411ace;
+    margin: 0 auto;
+  
+}
+.rodape h3{
+    text-align: center;
+    padding-top: 10px;  
+}
+.rodape .links{
+    text-align: center;
+    padding-top: 5px;
+}
+
