@@ -2,21 +2,15 @@
     margin: 0;
 }
 body{
-    height: 100%;
     font-family: tahoma;
 }
 .limita-largura {
     width: 100%;
     min-width: 320px;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: auto auto;
 }
 /*=== Estilos globais ===*/
-.secao{
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-}
 .paragrafo{
     font-size: 16px;
     text-align: justify;
@@ -29,99 +23,99 @@ body{
 .texto-branco{
     color: #ffffff;
 }
-/*=== Seção Um ===*/
-.secao-um{
+.container {
+    position: relative;  
+}
+/*=== Seção topo ===*/
+.topo{
     width: 100%;
     background-color: #3a07f5;
     color:#ffffff;   
 }
-
 a{
     color: blue;
     background-color: #ffffff;
     border-radius: 15px;
     padding: 2px 15px ;
     text-decoration: none;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
-.secao-um .links{
+.topo .links{
     padding: 20px;
     text-align: center;
 }
 
-/*=== Seção Topo ===*/
-
+/*=== Seção banner ===*/
+.banner{
+    width: 100%;
+    color:#ffffff;   
+}
+a{
+    color: blue;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2px 15px ;
+    text-decoration: none;
+    font-weight: bold;    
+}
+.banner .links{
+    padding: 20px;
+    text-align: center;
+}
 h1{
     font-size: 48px;
     position: absolute;
-    top: 250px;
-    
+    top: 360px;
+    left: 65px;  
 }
-h2{
-    font-size: 48px;
-    position: absolute;
-    top: 310px;
-    
-}
-.paragrafo-topo{
+
+.subtitulo-banner{
     font-size: 23px;
     position: absolute;
-    top: 370px;
+    top: 420px; 
+    left: 60px; 
     color: #3a07f5;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 .links li{
     display: inline;
-    padding: 0  12px;
-    
+    padding: 0  12px;    
 }
 .links{
     padding: 14px 0;
 }
-.topo .links{
-    position: absolute;
-    top: 20px;
-    right: 0;
-}
-
-.topo{
+.banner{
     width: 100%;
-    background-color: rgb(12, 48, 212);
-    background-image: url('../img/lampada.jpg');
     background-size: cover;
-    opacity: 0.3;
-    background-attachment: fixed;
     background-position: 50%;
-    height: 650px;        
+    height: 730px;   
+    background-image: url('../img/terra.jpg');    
 }
-
-.topo div{
+.banner div{
     width: 100%;
     max-width: 1024px;
     margin: 0 auto; 
     color: aliceblue;
 } 
-
-.container {
-    position: relative;
-     
+.banner .links{
+    position: absolute;
+    top:600px; 
+    left: 85px;  
 }
-
-
+.banner a{
+    padding: 10px 50px;  
+}
 /*===Seção sobre ===*/
-h3{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding-top: 30px;
-}
 img {
     width: 100%;
     overflow: clip;
 }
-
+h3{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
 /*===Seção habilidades ===*/
 .galeria{
     display: flex;
@@ -135,10 +129,10 @@ img {
 .imagem-sombra{
     box-shadow: 10px 10px 10px #939393;
 }
-
-
 /*=== Seção projetos ===*/
-
+.projetos{
+    padding-bottom: 400px;   
+}
 .projetos img{
     width: 40%;
 }
@@ -146,8 +140,7 @@ img {
 .rodape{
     width: 100%;
     background-color: #411ace;
-    margin: 0 auto;
-  
+    margin-top: 0; 
 }
 .rodape h3{
     text-align: center;
@@ -157,4 +150,16 @@ img {
     text-align: center;
     padding-top: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
