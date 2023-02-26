@@ -3,6 +3,7 @@
 }
 body{
     font-family: tahoma;
+    
 }
 .limita-largura {
     width: 100%;
@@ -10,24 +11,23 @@ body{
     max-width: 1024px;
     margin: auto auto;
 }
-/*=== Estilos globais ===*/
-.paragrafo{
-    font-size: 16px;
-    text-align: justify;
-    line-height: 32px;
-    margin-bottom: 20px;
+.secao{
+    padding-top: 100px;
+    padding-bottom: 100px ;
+
 }
+/*=== Estilos globais ===*/
+
 .texto-azul{
     color: blue;
 }
 .texto-branco{
     color: #ffffff;
 }
-.container {
-    position: relative;  
-}
+
 /*=== Seção topo ===*/
 .topo{
+    position: fixed;
     width: 100%;
     background-color: #3a07f5;
     color:#ffffff;   
@@ -35,7 +35,7 @@ body{
 a{
     color: blue;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 60px;
     padding: 2px 15px ;
     text-decoration: none;
     font-weight: bold;   
@@ -44,39 +44,6 @@ a{
     padding: 20px;
     text-align: center;
 }
-
-/*=== Seção banner ===*/
-.banner{
-    width: 100%;
-    color:#ffffff;   
-}
-a{
-    color: blue;
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 2px 15px ;
-    text-decoration: none;
-    font-weight: bold;    
-}
-.banner .links{
-    padding: 20px;
-    text-align: center;
-}
-h1{
-    font-size: 48px;
-    position: absolute;
-    top: 360px;
-    left: 65px;  
-}
-
-.subtitulo-banner{
-    font-size: 23px;
-    position: absolute;
-    top: 420px; 
-    left: 60px; 
-    color: #3a07f5;
-    font-weight: bold;  
-}
 .links li{
     display: inline;
     padding: 0  12px;    
@@ -84,43 +51,72 @@ h1{
 .links{
     padding: 14px 0;
 }
-.banner{
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    height: 730px;   
-    background-image: url('../img/terra.jpg');    
-}
-.banner div{
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto; 
-    color: aliceblue;
-} 
-.banner .links{
-    position: absolute;
-    top:600px; 
-    left: 85px;  
-}
-.banner a{
-    padding: 10px 50px;  
-}
+
 /*===Seção sobre ===*/
-img {
-    width: 100%;
-    overflow: clip;
+.banner{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
-h3{
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+.sobre{
+    display: flex;
+    padding-top: 150px;
+    
+    justify-content: space-between;
+    
+   
+
+}
+.sobre-mim{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-left: 200px; 
+    margin-right: 200px;
     
 }
+.sobre-mim p{
+    line-height: 36px;
+}
+.sobre-mim h3{
+    padding-bottom: 20px;
+}
+
+.sobre img{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    display: flex;
+}
+
+h3, h4{
+    text-align: center;
+    padding-top: 20px;
+    
+    
+}
+h3{
+    padding-bottom: 30px;
+    font-size: 32px;
+}
+
 /*===Seção habilidades ===*/
+
 .galeria{
+    padding-top: 50px;
     display: flex;
     overflow-x: scroll;
-    margin: 0 auto 20px auto;   
+     
 }
 .galeria img{
     width: 315px;
@@ -131,18 +127,37 @@ h3{
 }
 /*=== Seção projetos ===*/
 .projetos{
-    padding-bottom: 400px;   
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.projeto{
+    margin: 15px;
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 20%;
+}
+
+.projetos p{
+    text-align: center;
+    margin-top: 20px;
 }
 .projetos img{
-    width: 40%;
+    width: 300px;
+    height: 200px;;
 }
+
 /*=== Seção rodape ===*/
 .rodape{
     width: 100%;
     background-color: #411ace;
-    margin-top: 0; 
+    
 }
-.rodape h3{
+.rodape h4{
     text-align: center;
     padding-top: 10px;  
 }
@@ -150,16 +165,4 @@ h3{
     text-align: center;
     padding-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
