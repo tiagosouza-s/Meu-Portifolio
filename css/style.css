@@ -24,6 +24,9 @@ body{
 .texto-branco{
     color: #ffffff;
 }
+.texto-preto{
+    color: black;
+}
 
 /*=== Seção topo ===*/
 .topo{
@@ -56,7 +59,8 @@ a{
 .banner{
 
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 
 
@@ -68,7 +72,9 @@ a{
 }
 .intro{
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
+    padding-right: 200px;
 }
 .sobre{
     display: flex;
@@ -81,22 +87,23 @@ a{
 }
 .sobre-mim{
     text-align: center;
-    margin-left: 200px; 
-    margin-right: 200px;
+    margin-left: 20%; 
+    margin-right: 20%;
     
 }
 .sobre-mim p{
     line-height: 36px;
 }
-.sobre-mim h3{
-    padding-bottom: 20px;
-}
 
 .sobre img{
-    width: 300px;
-    height: 300px;
-    border-radius: 200px;
-    display: flex;
+    width: 20%;
+    min-width: 200px;
+    
+    height: 20%;
+    min-height: 200px;
+    border-radius: 90%;
+    
+
 }
 
 h3, h4{
@@ -106,14 +113,16 @@ h3, h4{
     
 }
 h3{
-    padding-bottom: 30px;
+    
+    padding-bottom: 50px;
     font-size: 32px;
+    
 }
 
 /*===Seção habilidades ===*/
 
 .galeria{
-    padding-top: 50px;
+    
     display: flex;
     overflow-x: scroll;
      
@@ -125,16 +134,44 @@ h3{
 .imagem-sombra{
     box-shadow: 10px 10px 10px #939393;
 }
+
 /*=== Seção projetos ===*/
-.projetos{
-    padding-top: 50px;
-    width: 100%;
+.logotipo{
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 50px;
+   
+       
+}
+.itens-logotipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logotipo img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    margin: 15px;
+}
+
+.subtitulo{
+    text-align: left;
+    border-left: 1px solid blue;
+    padding: 0 0 0 10px;
+   
+}
+
+.websites{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
 
 }
 
-.projeto{
+.website{
     margin: 15px;
     border: 1px solid blue;
     display: flex;
@@ -142,11 +179,11 @@ h3{
     flex-basis: 20%;
 }
 
-.projetos p{
+.websites p{
     text-align: center;
     margin-top: 20px;
 }
-.projetos img{
+.websites img{
     width: 300px;
     height: 200px;;
 }
