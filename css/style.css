@@ -102,25 +102,22 @@ a{
     
     height: 20%;
     min-height: 200px;
-    border-radius: 90%;
-    
+    border-radius: 90%; 
 
 }
 
 h3, h4{
     text-align: center;
-    padding-top: 20px;
-    
-    
+    padding-top: 20px;       
 }
-h3{
-    
+
+h3{ 
     padding-bottom: 50px;
-    font-size: 32px;
-    
+    font-size: 32px;  
 }
 
 /*===Seção habilidades ===*/
+
 .habilidades{
     background-color: #3a07f5;
 }
@@ -136,9 +133,7 @@ h3{
     height: 150px;
     margin: 10px;
 }
-.imagem-sombra{
-    box-shadow: 10px 10px 10px white;
-}
+
 
 /*=== Seção projetos ===*/
 
