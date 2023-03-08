@@ -33,7 +33,8 @@ body{
     position: fixed;
     width: 100%;
     background-color: #3a07f5;
-    color:#ffffff;   
+    color:#ffffff; 
+    border-bottom: 1px solid white;  
 }
 a{
     color: blue;
@@ -120,22 +121,27 @@ h3{
 }
 
 /*===Seção habilidades ===*/
-
+.habilidades{
+    background-color: #3a07f5;
+}
 .galeria{
     
     display: flex;
-    overflow-x: scroll;
+    justify-content: center;
+    
      
 }
 .galeria img{
-    width: 315px;
+    width: 120px;
+    height: 150px;
     margin: 10px;
 }
 .imagem-sombra{
-    box-shadow: 10px 10px 10px #939393;
+    box-shadow: 10px 10px 10px white;
 }
 
 /*=== Seção projetos ===*/
+
 .logotipo{
     display: flex;
     flex-flow: row wrap;
@@ -190,16 +196,19 @@ h3{
 
 /*=== Seção rodape ===*/
 .rodape{
-    width: 100%;
+   
     background-color: #411ace;
+     
     
 }
 .rodape h4{
     text-align: center;
-    padding-top: 10px;  
+    
+    
 }
 .rodape .links{
     text-align: center;
-    padding-top: 5px;
+    margin-bottom: 0;
 }
+
 
