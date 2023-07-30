@@ -1,8 +1,9 @@
-*{
-    margin: 0;
-}
 body{
     font-family: tahoma;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1280pxpx;
+    margin: 0 auto;
     
 }
 .limita-largura {
@@ -18,15 +19,6 @@ body{
 }
 /*=== Estilos globais ===*/
 
-.texto-azul{
-    color: blue;
-}
-.texto-branco{
-    color: #ffffff;
-}
-.texto-preto{
-    color: black;
-}
 
 /*=== Seção topo ===*/
 .topo{
@@ -37,7 +29,7 @@ body{
     border-bottom: 1px solid white;  
 }
 a{
-    color: blue;
+    color: #008ccf;
     background-color: #ffffff;
     border-radius: 60px;
     padding: 2px 15px ;
@@ -52,158 +44,85 @@ a{
     display: inline;
     padding: 0  12px;    
 }
+
 .links{
     padding: 14px 0;
 }
 
-/*===Seção sobre ===*/
-.banner{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-
+/*=== main ===*/
+.info{  
+    text-align: center;
+    font-size: 32px;
+    padding: 50px;
 }
+
 .container{
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
-}
-.intro{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0px;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding-right: 200px;
-}
-.sobre{
-    display: flex;
-    padding-top: 150px;
-    
-    justify-content: space-between;
-    
-   
-
-}
-.sobre-mim{
-    text-align: center;
-    margin-left: 20%; 
-    margin-right: 20%;
-    
-}
-.sobre-mim p{
-    line-height: 36px;
-}
-
-.sobre img{
-    width: 20%;
-    min-width: 200px;
-    
-    height: 20%;
-    min-height: 200px;
-    border-radius: 90%; 
-
-}
-
-h3, h4{
-    text-align: center;
-    padding-top: 20px;       
-}
-
-h3{ 
-    padding-bottom: 50px;
-    font-size: 32px;  
-}
-
-/*===Seção habilidades ===*/
-
-.habilidades{
-    background-color: #3a07f5;
-}
-.galeria{
-    
-    display: flex;
-    justify-content: center;
-    
-     
-}
-.galeria img{
-    width: 120px;
-    height: 150px;
-    margin: 10px;
-}
-
-
-/*=== Seção projetos ===*/
-
-.logotipo{
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 50px;
-   
-       
-}
-.itens-logotipos{
-    display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: center;
-}
-.logotipo img{
-    width: 200px;
-    height: 200px;
-    border: 1px solid blue;
-    margin: 15px;
+    gap: 20px;
+    border-bottom: 1px solid red;  
 }
 
-.subtitulo{
-    text-align: left;
-    border-left: 1px solid blue;
-    padding: 0 0 0 10px;
-   
-}
+.card {
+    width: 280px;
+    border-radius: 4px;
+  }
 
-.websites{
+.container-image img{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 100px;
-
+    border-radius: 4px 4px 0px 0px;  
 }
 
-.website{
-    margin: 15px;
-    border: 1px solid blue;
-    display: flex;
-    flex-flow: column wrap;
-    flex-basis: 20%;
-}
 
-.websites p{
-    text-align: center;
-    margin-top: 20px;
-}
-.websites img{
-    width: 300px;
-    height: 200px;;
-}
 
-/*=== Seção rodape ===*/
-.rodape{
-   
-    background-color: #411ace;
-     
+
+  /*=== Media  ===*/
+  @media (min-width:481px) and (max-width:968px){
+    .container-info {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+    .container{
+        background-color: #008ccf;
+        display: flex;
+        padding-left: 20px;
+
+    }
+    .card{
+        display: flex;
+        background-color: aquamarine;
+        width: 600px;   
+
+    }
     
-}
-.rodape h4{
-    text-align: center;
-    
-    
-}
-.rodape .links{
-    text-align: center;
-    margin-bottom: 0;
-}
+    .container-info{
+        padding-left: 10px;
+        background-color: #3a07f5;
+        display: flex;
+        
+    }
 
+    
+    .container-image img{
+        width: 200px;
+        
+    }
 
+    .info{
+        font-size: 24px;
+    }
+
+} 
+  @media (max-width:481px){
+      .info{
+        font-size: 20px;
+      }
+  }
+
+ 
