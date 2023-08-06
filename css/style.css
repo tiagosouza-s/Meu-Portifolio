@@ -1,59 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 body{
     font-family: tahoma;
     width: 100%;
-    min-width: 320px;
-    max-width: 1280pxpx;
-    margin: 0 auto;
+    
+    
     
 }
-.limita-largura {
-    width: 100%;
-    min-width: 320px;
-    max-width: 1024px;
-    margin: auto auto;
-}
-.secao{
-    padding-top: 100px;
-    padding-bottom: 100px ;
-
-}
-/*=== Estilos globais ===*/
-
-
-/*=== Seção topo ===*/
-.topo{
-    position: fixed;
-    width: 100%;
-    background-color: #3a07f5;
-    color:#ffffff; 
-    border-bottom: 1px solid white;  
-}
-a{
-    color: #008ccf;
-    background-color: #ffffff;
-    border-radius: 60px;
-    padding: 2px 15px ;
-    text-decoration: none;
-    font-weight: bold;   
-}
-.topo .links{
+/*=== Header ===*/ 
+header{
+    background-color: aqua;
     padding: 20px;
-    text-align: center;
-}
-.links li{
-    display: inline;
-    padding: 0  12px;    
 }
 
-.links{
-    padding: 14px 0;
+/*=== menu ===*/ 
+nav#menu ul{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+nav#menu li{
+    
+    background-color: #008ccf;
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;  
+}
+
+nav#menu li:hover{
+    background-color: black;
+}
+
+a{
+    color: #fff;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: bold; 
+    padding: 20px;  
 }
 
 /*=== main ===*/
+section#sobre{
+    background-color: chocolate;
+    
+}
 .info{  
     text-align: center;
-    font-size: 32px;
-    padding: 50px;
+    font-size: 24px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.info h1{
+    padding-top: 50px;
+}
+
+.info p{
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 
 .container{
@@ -64,24 +75,27 @@ a{
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
-    border-bottom: 1px solid red;  
+    border-bottom: 1px solid red; 
+    background-color: chartreuse; 
 }
 
 .card {
     width: 280px;
     border-radius: 4px;
+
   }
 
 .container-image img{
     width: 100%;
     border-radius: 4px 4px 0px 0px;  
+    padding-bottom: 20px;
 }
 
-
-
-
-  /*=== Media  ===*/
-  @media (min-width:481px) and (max-width:968px){
+.container-info h2{
+    padding-bottom: 20px ;
+}
+/*=== Media  ===*/
+@media (min-width:481px) and (max-width:968px){
     .container-info {
         display: flex;
         flex-direction: column;
@@ -119,7 +133,7 @@ a{
     }
 
 } 
-  @media (max-width:481px){
+@media (max-width:481px){
       .info{
         font-size: 20px;
       }
